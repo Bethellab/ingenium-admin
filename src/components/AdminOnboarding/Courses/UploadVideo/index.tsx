@@ -132,7 +132,7 @@ const UploadVideo: React.FC = () => {
 
                     <div className='flex items-center gap-4'>
                         <button className="bg-white border rounded-md  px-2 py-2" >Preview</button>
-                        <button className="bg-primary text-white rounded-md px-2 py-2 whitespace-nowrap" onClick={() => navigate('/courses/analytics')}>Publish Course</button>
+                        <button className="bg-primary text-white rounded-md px-2 py-2 whitespace-nowrap" onClick={() => navigate('/courses/courselist')}>Publish Course</button>
                     </div>
 
 

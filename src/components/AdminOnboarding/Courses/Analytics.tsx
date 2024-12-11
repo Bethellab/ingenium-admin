@@ -22,7 +22,7 @@ const Analytics = () => {
     return (
         <div className="">
 
-            <div className="flex justify-between items-center border-b">
+            <div className="flex flex-col lg:flex-row justify-between items-center border-b py-3 mx-6">
                 {/* Breadcrumb */}
                 <nav className="text-sm sm:text-lg text-gray-600   py-2">
                     <Link to="/courses" className="">
@@ -36,77 +36,87 @@ const Analytics = () => {
                     <span className="font-semibold">Details</span>
                 </nav>
 
+                <div className="gap-3 flex items-center">
+                <button className="bg-primary text-white rounded-md px-2 py-2 whitespace-nowrap" >Edit Course</button>
+                <button className="bg-transparent text-gray-600 border-2 border-gray-300 rounded-md px-2 py-2 whitespace-nowrap" >Deactivate</button>
+                <button className="bg-transparent text-red-600 border-2 border-red-600 rounded-md px-2 py-2 whitespace-nowrap"  >Delete</button>
+
+                </div>
+
+            
+
                
 
             </div>
 
 
             {/* Cards Section */}
-            <div className="py-4 w-full">
-                <div className="flex gap-4 md:gap-2 justify-between">
+            <div className="py-4 w-full ">
+                <div className="flex flex-col lg:flex-row gap-4 md:gap-2 justify-between">
                     <div className="flex flex-col gap-3 w-full md:w-[32%] items-start bg-white rounded-lg border border-gray-300 p-2">
                         <div className="flex items-center gap-3">
                             <span className="font-semibold text-base sm:text-lg text-gray-900">
-                                Total completions
+                            Total enrollment
+                            </span>
+                        </div>
+                        <div className="flex flex-col gap-2 w-full p-3 bg-gray-100 border-l-4 border-primary rounded-md">
+                            <div className="flex items-center gap-2">
+                                <span className="text-xl font-semibold text-gray-900">20</span>
+                                <span className="text-md text-gray-500">Users</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="flex flex-col gap-3 w-full md:w-[32%] items-start bg-white rounded-lg border border-gray-300 p-2">
+                        <div className="flex items-center gap-3">
+                            <span className="font-semibold text-base sm:text-lg text-gray-900">
+                            Total completions
                             </span>
                         </div>
                         <div className="flex flex-col gap-2 w-full p-3 bg-gray-100 border-l-4 border-primary rounded-md">
                             <div className="flex items-center gap-2">
                                 <span className="text-xl font-semibold text-gray-900">4</span>
-                                <span className="text-sm text-gray-500">Users</span>
+                                <span className="text-md text-gray-500">Users</span>
                             </div>
                         </div>
                     </div>
                     <div className="flex flex-col gap-3 w-full md:w-[32%] items-start bg-white rounded-lg border border-gray-300 p-2">
                         <div className="flex items-center gap-3">
                             <span className="font-semibold text-base sm:text-lg text-gray-900">
-                                Average completion
+                            Average completion
                             </span>
                         </div>
                         <div className="flex flex-col gap-2 w-full p-3 bg-gray-100 border-l-4 border-primary rounded-md">
                             <div className="flex items-center gap-2">
-                                <span className="text-xl font-semibold text-gray-900">75</span>
-                                <span className="text-sm text-gray-500">%</span>
+                                <span className="text-xl font-semibold text-gray-900">73</span>
+                                <span className="text-md text-gray-500">%</span>
                             </div>
                         </div>
                     </div>
                     <div className="flex flex-col gap-3 w-full md:w-[32%] items-start bg-white rounded-lg border border-gray-300 p-2">
                         <div className="flex items-center gap-3">
                             <span className="font-semibold text-base sm:text-lg text-gray-900">
-                                Average quiz grade
-                            </span>
-                        </div>
-                        <div className="flex flex-col gap-2 w-full p-3 bg-gray-100 border-l-4 border-primary rounded-md">
-                            <div className="flex items-center gap-2">
-                                <span className="text-xl font-semibold text-gray-900">24.35</span>
-                                <span className="text-sm text-gray-500">%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="flex flex-col gap-3 w-full md:w-[32%] items-start bg-white rounded-lg border border-gray-300 p-2">
-                        <div className="flex items-center gap-3">
-                            <span className="font-semibold text-base sm:text-lg text-gray-900">
-                                Average quiz grade
+                            Average quiz grade
                             </span>
                         </div>
                         <div className="flex flex-col gap-2 w-full p-3 bg-gray-100 border-l-4 border-primary rounded-md">
                             <div className="flex items-center gap-2">
                                 <span className="text-xl font-semibold text-gray-900">24.35</span>
-                                <span className="text-sm text-gray-500">%</span>
+                                <span className="text-md text-gray-500">%</span>
                             </div>
                         </div>
                     </div>
                     <div className="flex flex-col gap-3 w-full md:w-[32%] items-start bg-white rounded-lg border border-gray-300 p-2">
                         <div className="flex items-center gap-3">
                             <span className="font-semibold text-base sm:text-lg text-gray-900">
-                                Average quiz grade
+                            Chat forum
                             </span>
                         </div>
-                        <div className="flex flex-col gap-2 w-full p-3 bg-gray-100 border-l-4 border-primary rounded-md">
+                        <div className="flex justify-between gap-2 w-full p-3 bg-gray-100 border-l-4 border-primary rounded-md">
                             <div className="flex items-center gap-2">
-                                <span className="text-xl font-semibold text-gray-900">24.35</span>
-                                <span className="text-sm text-gray-500">%</span>
+                                <span className="text-xl font-semibold text-gray-900">120</span>
+                                <span className="text-md text-gray-500">messages</span>
                             </div>
+                            <button className="bg-primary rounded-full p-1 text-white">Open chat</button>
                         </div>
                     </div>
                     {/* Similar responsiveness for other cards */}
