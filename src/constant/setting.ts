@@ -135,3 +135,48 @@ export const courseListHeading = [
     
   
   ]
+
+
+  export const UserRolesAndPermissionHeading = [
+   
+    {
+      name: "Full Name", 
+      sort: false,
+      action: null,  
+    },
+    {
+      name: "  Email Address",   
+      sort: false,
+      action: null,
+    },
+   
+    {
+      name: "Assigned role", 
+      sort: false,
+      action: null,  
+    },
+    {
+      name: "Status", 
+      sort: false,
+      action: null,  
+    },
+   
+    {
+      name: "Last usage",   
+      sort: false,
+      action: null,
+    },
+    {
+      name: "Date created",   
+      sort: false,
+      action: null,
+    },
+    {
+      name: "",
+      sort: false,
+      action: null,   
+    },
+    
+    
+  
+  ]

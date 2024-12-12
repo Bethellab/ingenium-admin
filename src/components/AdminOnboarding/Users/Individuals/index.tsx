@@ -1,4 +1,4 @@
-import { useState } from "react";
+
 import { Table } from "@/components/core/Table/Table";
 import { IndividualsHeading } from "@/constant/setting";
 import useIndividuals from './useIndividuals'
