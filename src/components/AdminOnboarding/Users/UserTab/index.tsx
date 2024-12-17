@@ -37,14 +37,14 @@ const UserTab = ({ links, currentTab,  onSearch, searchQuery }: TabbarProps) => 
             {/* Header Section */}
             <div className="flex flex-col lg:flex-row justify-between items-center border-b ">
                 <div>
-                    <div className="flex items-center space-x-12  px-2 py-3  ">
+                    <div className="flex items-center space-x-12  px-2 py-3 ">
                         {/* Links */}
                         {links.map((link) => (
                             <NavLink
                                 key={link.name}
                                 to={link.href}
                                 className={`block text-2xl text-gray-600 ${link.active === currentTab
-                                    ? "text-gray-900 font-semibold border-b-2 border-b-primary"
+                                    ? "text-gray-900 font-semibold  border-b-2 border-blue-600"
                                     : ""
                                     }   `}
                             >
@@ -69,10 +69,12 @@ const UserTab = ({ links, currentTab,  onSearch, searchQuery }: TabbarProps) => 
                     <div className="relative w-full sm:w-auto">
                         <button
                             onClick={() => setStatusOpen(!isStatusOpen)}
-                            className="border-2 py-2 px-4 rounded-md text-gray-600 bg-gray-100 border-gray-300 flex items-center justify-between w-full sm:w-auto"
+                            className="border-2 py-2 px-4 rounded-md gap-3 text-gray-600 bg-gray-100 border-gray-300 flex items-center justify-between w-full sm:w-auto"
                         >
                             Status: {selectedStatus}
-                            <span className="ml-1">▼</span>
+                            <svg width="15" height="7" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.5 0.75L6 5.25L10.5 0.75" stroke="#AEAAAB" stroke-width="1.33" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
                         </button>
                         {isStatusOpen && (
                             <ul className="absolute bg-white border rounded-md mt-1 shadow-lg w-full sm:w-40 ">

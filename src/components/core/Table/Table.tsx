@@ -91,7 +91,7 @@ export const Table: React.FC<TableProps> = ({
           {hasHeader ? (
             <thead>
            
-              <tr className="bg-gray-200  py-3 px-4">
+              <tr className="bg-gray-100  py-3 px-4">
               <td className=" px-4 py-4"><input type="radio" className="w-4 h-4 border border-gray-100" /></td>
             
                 {headers?.map(

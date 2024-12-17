@@ -180,3 +180,48 @@ export const courseListHeading = [
     
   
   ]
+
+  export const EarningsHeading = [
+   
+    {
+      name: "Transaction ID", 
+      sort: false,
+      action: null,  
+    },
+    {
+      name: "User name",   
+      sort: false,
+      action: null,
+    },
+   
+    {
+      name: "Email address", 
+      sort: false,
+      action: null,  
+    },
+    {
+      name: "Subscription plan", 
+      sort: false,
+      action: null,  
+    },
+   
+    {
+      name: "Payment method",   
+      sort: false,
+      action: null,
+    },
+    {
+      name: "Status",   
+      sort: false,
+      action: null,
+    },
+    {
+      name: "Date (Time)",   
+      sort: false,
+      action: null,
+    },
+  
+    
+  
+  ]
+

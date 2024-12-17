@@ -14,6 +14,7 @@ import AffiliateList from "@/components/AdminOnboarding/Affiliates/AffiliateList
 import CourseList from "@/components/AdminOnboarding/CourseList";
 import Users from "@/components/AdminOnboarding/Users";
 import Settings from "@/components/AdminOnboarding/Settings";
+import Earning from "@/components/AdminOnboarding/Earnings";
 
 
 
@@ -48,7 +49,8 @@ const router = createBrowserRouter([
       { path: "/affiliatelist", element: <AffiliateList /> },
 
       {path: "/users", element: <Users />},
-      {path: "/settings", element: <Settings />}
+      {path: "/settings", element: <Settings />},
+      {path: "/earnings", element: <Earning />},
     ]
   }
 

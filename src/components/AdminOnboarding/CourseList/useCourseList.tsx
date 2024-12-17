@@ -104,7 +104,7 @@ export default function useCourseList()  {
     const getEnrolledClass = (enrolled: string) => {
         switch (enrolled) {
           case "active":
-            return "bg-[#F0FDF4] text-[#16A34A] rounded-full py-2  text-center";
+            return "bg-[#F0FDF4] text-[#16A34A] rounded-full py-2 w-24 text-center";
           case "not ctive":
             return "bg-[#9F180E] text-white rounded-full py-2 px-8 text-center";
           

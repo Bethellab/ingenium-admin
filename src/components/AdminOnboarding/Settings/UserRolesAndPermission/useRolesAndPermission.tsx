@@ -17,7 +17,7 @@ export default function useRolesAndPermission()  {
             actions: [],
         },
         {
-            name: "Adeloba Joshua",
+            name: "Josh Dan",
             email: "adelobajoshua19@gmail.com",
             role: "Content Moderator",
             active: "active",
@@ -26,7 +26,7 @@ export default function useRolesAndPermission()  {
             actions: [],
         },
         {
-            name: "Adeloba Joshua",
+            name: "Adelo Josh",
             email: "adelobajoshua19@gmail.com",
             role: "Content Moderator",
             active: "active",
@@ -34,33 +34,7 @@ export default function useRolesAndPermission()  {
             date: "30/11/2024",
             actions: [],
         },
-        {
-            name: "Adeloba Joshua",
-            email: "adelobajoshua19@gmail.com",
-            role: "Content Moderator",
-            active: "active",
-            last: "19 Sep 2024, 03:00 PM",
-            date: "30/11/2024",
-            actions: [],
-        },
-        {
-            name: "Adeloba Joshua",
-            email: "adelobajoshua19@gmail.com",
-            role: "Content Moderator",
-            active: "active",
-            last: "19 Sep 2024, 03:00 PM",
-            date: "30/11/2024",
-            actions: [],
-        },
-        {
-            name: "Adeloba Joshua",
-            email: "adelobajoshua19@gmail.com",
-            role: "Content Moderator",
-            active: "active",
-            last: "19 Sep 2024, 03:00 PM",
-            date: "30/11/2024",
-            actions: [],
-        },
+       
        
        
     ];
@@ -97,19 +71,7 @@ export default function useRolesAndPermission()  {
                 },
               },
 
-              {
-                name: <p className="">Edit</p>,
-                icon: (
-                  <Icon
-                    icon="ph:lock-edit"
-                    className="w-[18px] h-[18px] mr-[10px]"
-                  />
-                ),
-                method: (item: any) => {
-                  setSelectedData(item);
-                  setSelectedAction("ban-user");
-                },
-              },
+             
               {
                 name: <p className="">Deactivate</p>,
                 icon: (

@@ -1,6 +1,6 @@
 import { useSearchParams } from "react-router-dom";
 
-export default function useUsers() {
+export  function useUsers() {
   const links = [
     { name: "Individuals", number: 220,  href: "?tab=individuals", active: "individuals" },
     { name: "Businesses", number: 44, href: "?tab=businesses", active: "businesses" },
@@ -13,3 +13,4 @@ export default function useUsers() {
 
   return { currentTab, links };
 }
+

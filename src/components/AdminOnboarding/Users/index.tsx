@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import UserTab from "./UserTab";
-import useUsers from "./useUsers";
+import {useUsers } from "./useUsers";
 import { RenderIf } from "@/components/hoc";
 import Individuals from "./Individuals";
 import Businesses from "./Businesses";
